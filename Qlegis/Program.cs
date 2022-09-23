@@ -1,9 +1,17 @@
+using Microsoft.EntityFrameworkCore;
+using Qlegis.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
+
+builder.Services.AddDbContext<BancoContext>
+    (options => options.UseMySql(
+        "server=localhost;initial catalog=qlegis;uid=root;pwd=123456",
+        Microsoft.EntityFrameworkCore.ServerVersion.Parse("8.0.30-mysql")));
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
