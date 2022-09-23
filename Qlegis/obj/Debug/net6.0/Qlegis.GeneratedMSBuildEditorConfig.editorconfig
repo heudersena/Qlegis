@@ -15,12 +15,32 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\csharp\Qlegis\Qlegis
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/csharp/Qlegis/Qlegis/Views/Cadastro/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FkYXN0cm9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/csharp/Qlegis/Qlegis/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/csharp/Qlegis/Qlegis/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/csharp/Qlegis/Qlegis/Views/Login/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/csharp/Qlegis/Qlegis/Views/PlanoLimitado/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhbm9MaW1pdGFkb1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/csharp/Qlegis/Qlegis/Views/PlanoPadrao/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhbm9QYWRyYW9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/csharp/Qlegis/Qlegis/Views/Plano/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhbm9cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/csharp/Qlegis/Qlegis/Views/Shared/Error.cshtml]

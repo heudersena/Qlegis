@@ -1,0 +1,51 @@
+﻿@{
+    ViewData["Title"] = "Login";
+
+    
+}
+
+<div class="dados">
+    <div class="entraDados">
+        <div id="boasVindas">
+            <h1>Bem-vindo ao Qquestao!</h1>
+            <p>Estuda que a vida muda</p>
+        </div>
+        <br />
+
+        <div id="entraDadosUsusario">
+            <div class="tMail" id="tMail2">
+                <img src="~/image/icones/Envelope.png" width="14px" />
+                <input type="email"
+                       name="tMail"
+                       id="tMail"
+                       placeholder="   Digite o seu e-mail"
+                       size="20"
+                       maxlength="40px" />
+            </div>
+
+            <div class="tSenha2">
+                <img src="~/image/icones/cadeado.png" width="14px" />
+                <input type="password"
+                       name="tSenha"
+                       id="tSenha"
+                       placeholder="  Digite sua senha" />
+            </div>
+
+            <a href="../001_logado/alterarSenha.html" id="sSenha">Esqueci a senha</a>
+            <div class="confirmarEntra" onclick="verifiarLog()">
+                <p><strong>ENTRAR NO SITE</strong></p>
+            </div>
+
+            <p class="levaAoCadastro">
+                Ainda não tem cadastro?
+                <a id="gCade" href="/cadastro">Cadastre-se!</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="imgDeDados">
+        <img src="~/image/imagens/image 6.png" alt="" />
+    </div>
+</div>
+
+<div class="maximoTes"></div>    

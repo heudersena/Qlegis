@@ -1,0 +1,151 @@
+﻿@{
+    ViewData["Title"] = "Cadastro";
+}
+
+<!--======== Formulario ===============-->
+
+<div class="telaLgin">
+    <div class="localCad">
+        <form action="mailto:gustavoferreira73@live.com"
+              method="post"
+              id="fContato">
+            <h1 class="cadTitulo">Crie sua conta</h1>
+            <p id="subTitulo">Preencha seus dados</p>
+
+            <fieldset id="usuario">
+                <p id="cNome2">
+                    <input type="text"
+                           name="tName"
+                           id="cNome"
+                           size="30"
+                           maxlength="40"
+                           placeholder="   Digite o seu nome" />
+                </p>
+
+                <p id="cNome2">
+                    <input type="text"
+                           name="tName"
+                           id="cSobreNome"
+                           size="30"
+                           maxlength="40"
+                           placeholder="   Digite o seu sobrenome" />
+                </p>
+
+                <p id="cNome2">
+                    <input type="email"
+                           name="tMail"
+                           id="cMail"
+                           size="30"
+                           maxlength="40"
+                           placeholder="    Digite o seu e-mail" />
+                </p>
+
+                <p id="cNome2">
+                    <input type="password"
+                           name="tSenha"
+                           id="cSenha"
+                           size="30"
+                           placeholder="    Digite sua senha" />
+                </p>
+
+                <p id="cNome2">
+                    <input type="password"
+                           name="mSenha"
+                           id="mSenha"
+                           size="30"
+                           placeholder="    Digite novamente a sua senha" />
+                </p>
+
+                <p id="cNome2">
+                    <input type="number"
+                           name="tTel"
+                           id="cTel"
+                           size="30"
+                           placeholder="        Digite o seu celular" />
+                </p>
+            </fieldset>
+
+            <fieldset id="endereco">
+                <div class="estados2">
+                    <div id="arquivoImag">
+                        <p id="arquivoGpd"><strong>Imagem de perfil</strong></p>
+                        <p id="cNome2">
+                            <label for="arquivo">Escolher arquivo</label>
+                            <input type="file" name="arquivo" id="arquivo" />
+                        </p>
+                    </div>
+
+                    <div class="estados">
+                        <p id="arquivoGpd"><strong>Estado</strong></p>
+                        <p>
+                            <label for="cEst"></label>
+                            <select name="tEst" id="cEst">
+                                <optgroup label="Região Norte">
+                                    <option value="AM">Amazonas</option>
+                                    <option value="AC">Acre</option>
+                                    <option value="RO">Rondônia</option>
+                                    <option value="TO">Tocantins</option>
+                                    <option value="PA">Pará</option>
+                                    <option value="AP">Amapá</option>
+                                    <option value="RR">Roraima</option>
+                                </optgroup>
+
+                                <optgroup label="Região Nordeste">
+                                    <option value="AL">Alagoas</option>
+                                    <option value="BA">Bahia</option>
+                                    <option value="CE">Ceará</option>
+                                    <option value="MA">Maranhão</option>
+                                    <option value="PB">Paraiba</option>
+                                    <option value="PE">Pernambuco</option>
+                                    <option value="PI">Piauí</option>
+                                    <option value="RN">Rio Grande do Norte</option>
+                                    <option value="SE">Sergipe</option>
+                                </optgroup>
+
+                                <optgroup label="Região Centro-Oeste">
+                                    <option value="DF">Distrito Federal</option>
+                                    <option value="MS">Mato Grosso do Sul</option>
+                                    <option value="GO">Goiás</option>
+                                    <option value="MT">Mato Grosso</option>
+                                </optgroup>
+
+                                <optgroup label="Região Sudeste">
+                                    <option value="MG">Minas Gerais</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="ES">Espírito Santo</option>
+                                    <option value="RJ" selected>Rio de Janeiro</option>
+                                </optgroup>
+
+                                <optgroup label="Regiâo Sul">
+                                    <option value="PR">Paraná</option>
+                                    <option value="SC">Santa Catarina</option>
+                                    <option value="RS">Rio Grande do Sul</option>
+                                </optgroup>
+                            </select>
+                        </p>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="cad" onclick="cadastro()">
+                <p>CADASTRAR</p>
+            </div>
+
+            <p id="facaLogin">
+                Já tem cadastro? <a href="/login">Faça o login</a> com seu e-mail e
+                senha.
+            </p>
+        </form>
+    </div>
+
+    <div class="lagoDoForme">
+        <h1>
+            São milhares de questões atuais de <br />
+            concursos + Simulados +<br />
+            Resumapas + Questões inéditas!
+        </h1>
+
+        <img src="~/image/image 7.png" alt="imagem" />
+    </div>
+</div>
+
+<!--======== Formulario ===============-->

@@ -1,49 +1,85 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/css/inicio.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/estiloplano.css" asp-append-version="true" />
+
     <title>@ViewData["Title"] - Qlegis</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/Qlegis.styles.css" asp-append-version="true" />
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Qlegis</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+    <header class="header" id="header">
+        <a href="/">
+            <img id="logo" src="~/image/icones/logoQqustao.png" alt="logo" />
+        </a>
+
+        <nav id="nav" class="nav">
+            <button id="btn-mobile">
+                <img src="~/image/icones/menu.png" width="20px" />
+            </button>
+
+            <ul id="menu" class="menu">
+                <li><a onclick="avisoDeLogin()">QUESTÕES</a></li>
+                <li><a onclick="avisoDeLogin()" href="#">SIMULADOS</a></li>
+                <li><a onclick="avisoDeLogin()" href="#">RESUMAPAS</a></li>
+                <li><a onclick="avisoDeLogin()" href="#">GUIAS</a></li>
+                <li><a href="/plano">PLANOS</a></li>
+                <li><a onclick="avisoDeLogin()" href="#">GRUPOS</a></li>
+
+                <li><a href="/login" id="entra">ENTRAR</a></li>
+                <li>
+                    <a href="/plano" id="gratis">EXPERIMENTE GRÁTIS</a>
+                </li>
+            </ul>
         </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2022 - Qlegis - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    <!--====================-->    
+    <main>
+        @RenderBody() 
+    </main>
+    <!--====== Footer ======-->
+
+    <footer class="footer">
+        <div class="primeiro">
+            <p>
+                <img src="~/image/icones/image_2022-02-27_17-21-57.png"
+                     width="150px" />
+            </p>
+
+            <p onclick="irSobre()">Sobre o Qquestao.com</p>
+
+            <p onclick="irTermos()">Termos de uso</p>
+
+            <p onclick="irDuvidas()">Dúvidas frequentes</p>
+
+            <p onclick="irPlnaos()">Planos</p>
+
+            <p onclick="irAjuda()">Ajuda</p>
+
+            <p id="affst">Ajuda</p>
+
+            <div class="grupo1">
+                <img id="pago" src="~/image/icones/Rectangle 24.png" alt="" />
+
+                <p id="affst2">Ajuda</p>
+
+                <p id="anima1">
+                    <strong>Fale conosco</strong><br />
+                    <img onclick="faleConosco()" src="~/image/icones/email.jpg" />
+                    <img onclick="avisoLink()" src="~/image/icones/whastapp.jpg" />
+                    <img onclick="avisoLink()" src="~/image/icones/facebook.jpg" />
+                    <img onclick="avisoLink()" src="~/image/icones/insta.jpg" />
+                </p>
+            </div>
         </div>
     </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    <!--====== Footer ======-->
+
+    <script src="~/js/app.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

@@ -2,7 +2,100 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="banner">
+    <input id="titulo" type="button" value="TITULO" />
 </div>
+
+<div class="sobre">
+    <div class="sober1">
+        <div>
+            <h2>+40.000</h2>
+            <p>Questões de Enfermagem</p>
+        </div>
+
+        <div>
+            <h2>+40.000</h2>
+            <p>Comentários dos professores</p>
+        </div>
+
+        <div>
+            <h2>+40.000</h2>
+            <p>Mapas mentais de Enfermagem</p>
+        </div>
+
+        <div>
+            <h2>+40.000</h2>
+            <p>Questões inéditas</p>
+        </div>
+
+        <div>
+            <h2>+40.000</h2>
+            <p>Simulados inéditos</p>
+        </div>
+    </div>
+    <div class="mudar"><p>EU QUERO MUDAR DE VIDA</p></div>
+</div>
+
+<h2 class="tTituloM">Por que usar a plataforma Qquestao?</h2>
+
+<section class="flex">
+    <div>
+        <p><strong>Acompanhe seu desempenho</strong></p>
+        <p>Saiba os seus pontos fortes e fracos.</p>
+    </div>
+
+    <div>
+        <p><strong>Saiba os assuntos mais cobrados</strong></p>
+        <p>Saiba o que é mais cobrado e controle seus estudos.</p>
+    </div>
+
+    <div>
+        <p><strong>Simulados</strong></p>
+        <p>
+            Treine com os melhores simulados <br />
+            inéditos ou crie seu próprio simulado. <br />
+            Participe do ranking.
+        </p>
+    </div>
+
+    <div>
+        <p><strong>Resumapas</strong></p>
+        <p>
+            Materiais preparados para <br />
+            economizar o seu tempo e <br />
+            potencializar seu estudo.
+        </p>
+    </div>
+
+    <div>
+        <p><strong>Guias de estudo</strong></p>
+        <p>
+            Questões organizadas <br />
+            conforme os editais <br />
+            publicados. Acesse e Estude.
+        </p>
+    </div>
+</section>
+
+<div class="espa"></div>
+
+<!--======Aviso popup ======-->
+
+<div class="avisoEntra" id="avisoEntra">
+    <div class="avisoEntra2">
+        <h3>Aviso</h3>
+        <p>Para acessar esta opção é preciso entrar com a sua conta!</p>
+
+        <button id="btnEntrar" onclick="irLogin()">ENTRAR</button> <br />
+        <br />
+        <a onclick="fechaAvisoDeLogin()" href="#">cancelar</a>
+    </div>
+</div>
+
+<div class="avisoErro">
+    <div class="aviso2Erro">
+        <img src="~/image/imagens/erro404.png" alt="" />
+    </div>
+</div>
+
+<!--======Aviso popup ======-->
