@@ -11,7 +11,7 @@
 </head>
 <body>
     <header class="header" id="header">
-        <a href="/">
+        <a asp-controller="Home" asp-action="Index">
             <img id="logo" src="~/image/icones/logoQqustao.png" alt="logo" />
         </a>
 
@@ -28,9 +28,9 @@
                 <li><a href="/plano">PLANOS</a></li>
                 <li><a onclick="avisoDeLogin()" href="#">GRUPOS</a></li>
 
-                <li><a href="/login" id="entra">ENTRAR</a></li>
+                <li><a asp-controller="Login" asp-action="Index" id="entra">ENTRAR</a></li>
                 <li>
-                    <a href="/plano" id="gratis">EXPERIMENTE GRÁTIS</a>
+                    <a asp-controller="Plano" asp-action="Index" id="gratis">EXPERIMENTE GRÁTIS</a>
                 </li>
             </ul>
         </nav>
