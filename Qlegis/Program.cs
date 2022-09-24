@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
-
+// https://www.youtube.com/watch?v=zr3QiQDZ0-k&ab_channel=DEVNETCOREValdirFerreira
 builder.Services.AddDbContext<Contexto>
     (options => options.UseSqlServer
     ("Data Source=BR\\SQLEXPRESS;Initial Catalog=a;Integrated Security=False;User ID=sa;Password=123456;Connect Timeout=15;Encrypt=False;TrustServerCertificate=False"));
