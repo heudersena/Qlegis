@@ -1,4 +1,6 @@
-﻿@{
+﻿@model Qlegis.Models.UserModel
+
+@{
     ViewData["Title"] = "Cadastro";
 }
 
@@ -6,7 +8,7 @@
 
 <div class="telaLgin">
     <div class="localCad">
-        <form action="mailto:gustavoferreira73@live.com"
+        <form asp-action="Create"
               method="post"
               id="fContato">
             <h1 class="cadTitulo">Crie sua conta</h1>
@@ -15,52 +17,59 @@
             <fieldset id="usuario">
                 <p id="cNome2">
                     <input type="text"
-                           name="tName"
+                           name="FirstName"
                            id="cNome"
                            size="30"
                            maxlength="40"
+                           asp-for="FirstName"
                            placeholder="   Digite o seu nome" />
+
                 </p>
 
                 <p id="cNome2">
                     <input type="text"
-                           name="tName"
+                           name="LastName"
                            id="cSobreNome"
                            size="30"
                            maxlength="40"
+                           asp-for="LastName"
                            placeholder="   Digite o seu sobrenome" />
                 </p>
 
                 <p id="cNome2">
                     <input type="email"
-                           name="tMail"
+                           name="Email"
                            id="cMail"
                            size="30"
                            maxlength="40"
+                           asp-for="Email"
                            placeholder="    Digite o seu e-mail" />
                 </p>
 
                 <p id="cNome2">
                     <input type="password"
-                           name="tSenha"
+                           name="Password"
                            id="cSenha"
                            size="30"
+                           asp-for="Password"
                            placeholder="    Digite sua senha" />
                 </p>
 
                 <p id="cNome2">
                     <input type="password"
-                           name="mSenha"
+                           name="ConfirmPassword"
                            id="mSenha"
                            size="30"
+                           asp-for="ConfirmPassword"
                            placeholder="    Digite novamente a sua senha" />
                 </p>
 
                 <p id="cNome2">
                     <input type="number"
-                           name="tTel"
+                           name="NumberPhoneCell"
                            id="cTel"
                            size="30"
+                           asp-for="NumberPhoneCell"
                            placeholder="        Digite o seu celular" />
                 </p>
             </fieldset>
@@ -71,7 +80,7 @@
                         <p id="arquivoGpd"><strong>Imagem de perfil</strong></p>
                         <p id="cNome2">
                             <label for="arquivo">Escolher arquivo</label>
-                            <input type="file" name="arquivo" id="arquivo" />
+                            <input type="text" name="ImageAvatarPerfil" id="arquivo" asp-for="ImageAvatarPerfil" />
                         </p>
                     </div>
 
@@ -79,7 +88,7 @@
                         <p id="arquivoGpd"><strong>Estado</strong></p>
                         <p>
                             <label for="cEst"></label>
-                            <select name="tEst" id="cEst">
+                            <select name="State" id="cEst" asp-for="State">
                                 <optgroup label="Região Norte">
                                     <option value="AM">Amazonas</option>
                                     <option value="AC">Acre</option>
@@ -126,8 +135,8 @@
                     </div>
                 </div>
             </fieldset>
-            <div class="cad" onclick="cadastro()">
-                <p>CADASTRAR</p>
+            <div class="cad">
+                <p><button type="submit">CADASTRAR</button>
             </div>
 
             <p id="facaLogin">

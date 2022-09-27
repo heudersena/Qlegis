@@ -843,9 +843,12 @@ input[type="file"]{
     cursor: pointer;
 }
 
-.cad p{
-    padding: 10px;
-}
+    .cad button {
+        padding: 10px;
+        border: none;
+        width: 100%;
+        background: #8E72DC;
+    }
 
 #facaLogin{
     color: #969696;
