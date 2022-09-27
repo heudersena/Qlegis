@@ -9,8 +9,9 @@ builder.Services.AddControllersWithViews();
 var app = builder.Build();
 // https://www.youtube.com/watch?v=zr3QiQDZ0-k&ab_channel=DEVNETCOREValdirFerreira
 builder.Services.AddDbContext<Contexto>
-    (options => options.UseSqlServer
-    ("Data Source=BR\\SQLEXPRESS;Initial Catalog=a;Integrated Security=False;User ID=sa;Password=123456;Connect Timeout=15;Encrypt=False;TrustServerCertificate=False"));
+    (options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+builder.Services.AddMvc().SetCompatibilityVersion(Microsoft.AspNetCore.Mvc.CompatibilityVersion.Version_2_2);
 
 
 //builder.Services.AddDbContext<BancoContext>

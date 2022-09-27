@@ -17,7 +17,7 @@ namespace Qlegis.Models
 
         [Display(Name = "FirstName")]
         [Column("FirstName")]
-        public int FirstName { get; set; }
+        public string FirstName { get; set; }
 
         [Display(Name = "LastName")]
         [Column("LastName")]
@@ -25,26 +25,26 @@ namespace Qlegis.Models
 
         [Display(Name = "Email")]
         [Column("Email")]
-        public int Email { get; set; }
+        public string Email { get; set; }
 
         [Display(Name = "Password")]
         [Column("Password")]
-        public int Password { get; set; }
+        public string Password { get; set; }
 
         [Display(Name = "ConfirmPassword")]
         [Column("ConfirmPassword")]
-        public int ConfirmPassword { get; set; }
+        public string ConfirmPassword { get; set; }
 
         [Display(Name = "NumberPhoneCell")]
         [Column("NumberPhoneCell")]
-        public int NumberPhoneCell { get; set; }
+        public string NumberPhoneCell { get; set; }
 
         [Display(Name = "ImageAvatarPerfil")]
         [Column("ImageAvatarPerfil")]
-        public int ImageAvatarPerfil { get; set; }
+        public string ImageAvatarPerfil { get; set; }
 
         [Display(Name = "State")]
         [Column("State")]
-        public int State { get; set; }
+        public string State { get; set; }
     }
 }
