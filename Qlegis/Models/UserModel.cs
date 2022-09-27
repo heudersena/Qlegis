@@ -21,7 +21,7 @@ namespace Qlegis.Models
 
         [Display(Name = "LastName")]
         [Column("LastName")]
-        public int LastName { get; set; }
+        public string LastName { get; set; }
 
         [Display(Name = "Email")]
         [Column("Email")]

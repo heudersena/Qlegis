@@ -6,13 +6,14 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-var app = builder.Build();
+
 // https://www.youtube.com/watch?v=zr3QiQDZ0-k&ab_channel=DEVNETCOREValdirFerreira
 builder.Services.AddDbContext<Contexto>
     (options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddMvc().SetCompatibilityVersion(Microsoft.AspNetCore.Mvc.CompatibilityVersion.Version_2_2);
 
+var app = builder.Build();
 
 //builder.Services.AddDbContext<BancoContext>
 //  (options => options.UseMySql(
